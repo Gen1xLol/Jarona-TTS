@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jarona TTS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-wave-container">
+    <canvas id="waveCanvas"></canvas>
+  </div>
+  <div class="vignette"></div>
+
+  <div class="app">
+    <div class="title">
+      <h1>JARONA TTS</h1>
+      <span class="subtitle" id="loadStatus">loading phoneme libraries...</span>
+    </div>
+
+    <div class="clip-hud" id="clipHud">
+      <span class="filename" id="hudFileName">CLIP: IDLE</span>
+      <span class="origin-tag" id="hudOrigin">[---]</span>
+    </div>
+
+    <div class="textbox">
+      <div class="editable"
+           id="editable"
+           contenteditable="true"
+           spellcheck="false"
+           data-placeholder="type something for Flowery to say..."></div>
+    </div>
+
+    <div class="ratio-panel">
+      <div class="ratio-header">
+        <span class="en-label" id="enRatioText">EN AUDIO: 0%</span>
+        <span class="jp-label" id="jpRatioText">JP AUDIO: 0%</span>
+      </div>
+      <div class="ratio-bar-container">
+        <div class="ratio-bar-en" id="ratioBarEn" style="width: 50%;"></div>
+        <div class="ratio-bar-jp" id="ratioBarJp" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="pixel-btn primary" id="playBtn" disabled>SPEAK</button>
+      <button class="pixel-btn" id="stopBtn" disabled>STOP</button>
+      <button class="pixel-btn" id="exportBtn" disabled>EXPORT WAV</button>
+
+      <label class="checkbox-container" title="Use Japanese phoneme voicelines for vowels and matching sounds">
+        <input type="checkbox" id="jpToggle" checked>
+        <span>JP VOICE</span>
+      </label>
+
+      <div class="spacer"></div>
+      <button class="pixel-btn" id="clearBtn">CLEAR</button>
+    </div>
+
+    <div class="status-line" id="statusLine">&nbsp;</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
