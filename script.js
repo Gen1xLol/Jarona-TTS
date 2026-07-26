@@ -96,8 +96,12 @@
   let ambientPhase = 0;
 
   function resizeCanvas() {
-    waveCanvas.width = window.innerWidth;
-    waveCanvas.height = window.innerHeight;
+    const dpr = window.devicePixelRatio || 1;
+    waveCanvas.width = window.innerWidth * dpr;
+    waveCanvas.height = window.innerHeight * dpr;
+    waveCanvas.style.width = window.innerWidth + 'px';
+    waveCanvas.style.height = window.innerHeight + 'px';
+    waveCtx.scale(dpr, dpr);
   }
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas();
@@ -105,8 +109,8 @@
   function renderBackgroundSoundwave() {
     requestAnimationFrame(renderBackgroundSoundwave);
 
-    const w = waveCanvas.width;
-    const h = waveCanvas.height;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
     const centerY = h / 2;
 
     waveCtx.clearRect(0, 0, w, h);
