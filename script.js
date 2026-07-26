@@ -28,19 +28,7 @@
     jpRatioText: document.getElementById('jpRatioText'),
     ratioBarEn: document.getElementById('ratioBarEn'),
     ratioBarJp: document.getElementById('ratioBarJp'),
-    singBpmInput: document.getElementById('singBpmInput'),
-    singBaseNoteSelect: document.getElementById('singBaseNoteSelect'),
-    singNoteSelect: document.getElementById('singNoteSelect'),
-    singBeatsInput: document.getElementById('singBeatsInput'),
-    singInsertBtn: document.getElementById('singInsertBtn'),
   };
-
-  let singBpm = 100;
-  let singBaseNote = 1;
-
-  function secondsPerBeat() {
-    return (60 / singBpm) * singBaseNote;
-  }
 
   let useJpVoicelines = true;
   const storedJpSetting = localStorage.getItem(LOCALSTORAGE_KEY_JP);
@@ -216,97 +204,6 @@
     const rms = Math.sqrt(sumSq / Math.max(1, end - start));
 
     return { trimStart: start, trimEnd: end, rms };
-  }
-
-  function estimatePitchHz(data, start, end, sampleRate) {
-    const n = end - start;
-    if (n < 64) return null;
-
-    const minHz = 70;
-    const maxHz = 500;
-    const maxLag = Math.min(n - 1, Math.round(sampleRate / minHz));
-    const minLag = Math.max(2, Math.round(sampleRate / maxHz));
-    if (maxLag <= minLag) return null;
-
-    let bestLag = -1;
-    let bestScore = 0;
-
-    for (let lag = minLag; lag <= maxLag; lag++) {
-      let sum = 0;
-      let normA = 0;
-      let normB = 0;
-      const count = n - lag;
-      const step = count > 4000 ? Math.ceil(count / 4000) : 1;
-      for (let i = 0; i < count; i += step) {
-        const a = data[start + i];
-        const b = data[start + i + lag];
-        sum += a * b;
-        normA += a * a;
-        normB += b * b;
-      }
-      const denom = Math.sqrt(normA * normB) || 1e-9;
-      const score = sum / denom;
-      if (score > bestScore) {
-        bestScore = score;
-        bestLag = lag;
-      }
-    }
-
-    if (bestLag < 0 || bestScore < 0.3) return null;
-    return sampleRate / bestLag;
-  }
-
-  function grainSynthesize(sourceData, srcStart, srcEnd, sampleRate, targetHz, targetDurationSec, sourceHz) {
-    const srcLen = srcEnd - srcStart;
-    if (srcLen < 32 || !targetHz || targetDurationSec <= 0) {
-      return { data: sourceData.subarray(srcStart, srcEnd), sampleRate };
-    }
-
-    const detectedHz = sourceHz || estimatePitchHz(sourceData, srcStart, srcEnd, sampleRate) || 160;
-    const clampedTargetHz = Math.max(60, Math.min(1200, targetHz));
-
-    const grainPeriodSamples = Math.max(16, Math.round(sampleRate / detectedHz));
-    const grainSize = grainPeriodSamples * 4;
-    const analysisHop = grainPeriodSamples;
-
-    const pitchRatio = clampedTargetHz / detectedHz;
-    const synthesisHop = Math.max(1, Math.round(analysisHop / pitchRatio));
-
-    const outLen = Math.max(1, Math.round(targetDurationSec * sampleRate));
-    const out = new Float32Array(outLen);
-    const weight = new Float32Array(outLen);
-
-    const window = new Float32Array(grainSize);
-    for (let i = 0; i < grainSize; i++) {
-      window[i] = 0.5 - 0.5 * Math.cos((2 * Math.PI * i) / (grainSize - 1));
-    }
-
-    let readPos = 0;
-    let writePos = 0;
-
-    while (writePos < outLen) {
-      const grainStart = srcStart + Math.round(readPos) % Math.max(1, srcLen - grainSize > 0 ? srcLen - grainSize : srcLen);
-      for (let i = 0; i < grainSize; i++) {
-        const srcIdx = grainStart + i;
-        const outIdx = writePos + i;
-        if (outIdx >= outLen) break;
-        if (srcIdx >= srcStart && srcIdx < srcEnd) {
-          out[outIdx] += sourceData[srcIdx] * window[i];
-          weight[outIdx] += window[i];
-        }
-      }
-      writePos += synthesisHop;
-      readPos += analysisHop;
-      if (readPos > srcLen - grainSize && srcLen > grainSize) {
-        readPos = readPos % Math.max(1, srcLen - grainSize);
-      }
-    }
-
-    for (let i = 0; i < outLen; i++) {
-      if (weight[i] > 1e-6) out[i] /= Math.max(weight[i], 1);
-    }
-
-    return { data: out, sampleRate };
   }
 
   const mainThreadYield = () => new Promise(resolve => {
@@ -740,52 +637,13 @@
     return null;
   }
 
-  const NOTE_NAME_TO_SEMITONE = { c: 0, d: 2, e: 4, f: 5, g: 7, a: 9, b: 11 };
-
-  function noteNameToHz(name) {
-    const m = /^([A-Ga-g])(#|b)?(-?\d+)$/.exec(name.trim());
-    if (!m) return null;
-    const base = NOTE_NAME_TO_SEMITONE[m[1].toLowerCase()];
-    if (base === undefined) return null;
-    let semitone = base;
-    if (m[2] === '#') semitone += 1;
-    if (m[2] === 'b') semitone -= 1;
-    const octave = parseInt(m[3], 10);
-
-    const midi = (octave + 1) * 12 + semitone;
-    return 440 * Math.pow(2, (midi - 69) / 12);
-  }
-
-  const SING_TAG_RE = /\[([^\[\]:]+):([0-9]*\.?[0-9]+)\]/;
-
-  function parseSingTag(tagInner, beatsStr) {
-    const notes = tagInner.split(',').map(s => s.trim()).filter(Boolean).map(noteNameToHz).filter(hz => hz !== null);
-    const beats = parseFloat(beatsStr);
-    if (!notes.length || !isFinite(beats) || beats <= 0) return null;
-    return { notesHz: notes, beats };
-  }
-
   function tokenize(text) {
     const tokens = [];
-    const re = /[A-Za-z0-9'’]+(?:\[[^\[\]]*\])?|[.!?,;:]/g;
+    const re = /[A-Za-z0-9'’]+|[.!?,;:]/g;
     let m;
     while ((m = re.exec(text)) !== null) {
       const raw = m[0];
-      const tagMatch = SING_TAG_RE.exec(raw);
-      if (tagMatch) {
-        const wordText = raw.slice(0, tagMatch.index);
-        const sing = parseSingTag(tagMatch[1], tagMatch[2]);
-        tokens.push({
-          text: wordText,
-          start: m.index,
-          end: m.index + wordText.length,
-          tagStart: m.index + tagMatch.index,
-          tagEnd: m.index + raw.length,
-          sing
-        });
-      } else {
-        tokens.push({ text: raw, start: m.index, end: m.index + raw.length });
-      }
+      tokens.push({ text: raw, start: m.index, end: m.index + raw.length });
     }
     return tokens;
   }
@@ -1157,19 +1015,6 @@
       if (wordClipIndices && wordClipIndices.length === resolvedPhones.length) {
         const m = resolvedPhones.length;
 
-        const sing = tok.sing;
-        let nucleusIndices = [];
-        if (sing) {
-          for (let pi = 0; pi < m; pi++) {
-            if (isVowelPhone(resolvedPhones[pi]) || SONORANT_BASES.has(phonemeBase(resolvedPhones[pi]))) {
-              nucleusIndices.push(pi);
-            }
-          }
-          if (nucleusIndices.length === 0 && m > 0) nucleusIndices = [m - 1];
-        }
-
-        const sungTotalDuration = sing ? sing.beats * secondsPerBeat() : 0;
-
         for (let pi = 0; pi < m; pi++) {
           const key = resolvedPhones[pi];
           const bucket = library.get(key);
@@ -1194,22 +1039,7 @@
             overlapPrev = Math.min(maxOverlap, getPhonemeOverlapSec(prevKey, key));
           }
 
-          let trimmedDuration = naturalDuration;
-          let sungPitchHz = null;
-
-          if (sing) {
-            const nuclPos = nucleusIndices.indexOf(pi);
-            if (nuclPos >= 0) {
-              const notes = sing.notesHz;
-              const noteIdx = Math.min(notes.length - 1, Math.floor((nuclPos / nucleusIndices.length) * notes.length));
-              sungPitchHz = notes[noteIdx];
-              const consonantBudget = (m - nucleusIndices.length) * naturalDuration;
-              const nucleusBudget = Math.max(0.06, sungTotalDuration - consonantBudget);
-              trimmedDuration = nucleusBudget / nucleusIndices.length;
-            } else {
-              trimmedDuration = naturalDuration;
-            }
-          }
+          const trimmedDuration = naturalDuration;
 
           plan.push({
             kind: 'clip',
@@ -1224,8 +1054,7 @@
             gainScale,
             overlapPrev,
             origin,
-            file,
-            sungPitchHz
+            file
           });
         }
       }
@@ -1315,18 +1144,9 @@
       const startFrame = item.trimStart;
       const endFrame = item.trimEnd;
 
-      let sourceData = rawData;
-      let sourceOffset = startFrame;
-      let numFrames;
-
-      if (item.sungPitchHz) {
-        const synth = grainSynthesize(rawData, startFrame, endFrame, sampleRate, item.sungPitchHz, item.trimmedDuration, null);
-        sourceData = synth.data;
-        sourceOffset = 0;
-        numFrames = sourceData.length;
-      } else {
-        numFrames = Math.max(1, endFrame - startFrame);
-      }
+      const sourceData = rawData;
+      const sourceOffset = startFrame;
+      const numFrames = Math.max(1, endFrame - startFrame);
 
       const clipBuf = offline.createBuffer(1, numFrames, sampleRate);
       const clipData = clipBuf.getChannelData(0);
@@ -1476,12 +1296,7 @@
       } else {
         segments.push({ text: rawText.slice(tok.start, tok.end), timed: false, oov: true });
       }
-      if (tok.tagStart !== undefined) {
-        segments.push({ text: rawText.slice(tok.end, tok.tagEnd), timed: false, singTag: true });
-        cursor = tok.tagEnd;
-      } else {
-        cursor = tok.end;
-      }
+      cursor = tok.end;
     });
 
     if (cursor < rawText.length) {
@@ -1493,13 +1308,6 @@
     segments.forEach((seg) => {
       if (seg.text === '') return;
       if (!seg.timed) {
-        if (seg.singTag) {
-          const tagSpan = document.createElement('span');
-          tagSpan.className = 'sing-tag';
-          tagSpan.textContent = seg.text;
-          els.editable.appendChild(tagSpan);
-          return;
-        }
         const node = document.createTextNode(seg.text);
         els.editable.appendChild(node);
         return;
@@ -1718,98 +1526,6 @@
     setStatus('\u00A0');
     els.editable.focus();
   });
-
-  (function populateSingNoteSelect() {
-    const names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-    for (let octave = 5; octave >= 2; octave--) {
-      for (let ni = names.length - 1; ni >= 0; ni--) {
-        const label = `${names[ni]}${octave}`;
-        const opt = document.createElement('option');
-        opt.value = label;
-        opt.textContent = label;
-        if (label === 'C4') opt.selected = true;
-        els.singNoteSelect.appendChild(opt);
-      }
-    }
-  })();
-
-  els.singBpmInput.addEventListener('change', () => {
-    const v = parseInt(els.singBpmInput.value, 10);
-    singBpm = (isFinite(v) && v > 0) ? v : 100;
-    els.singBpmInput.value = String(singBpm);
-  });
-
-  els.singBaseNoteSelect.addEventListener('change', () => {
-    const v = parseFloat(els.singBaseNoteSelect.value);
-    singBaseNote = isFinite(v) && v > 0 ? v : 1;
-  });
-
-  function getWordBoundsAtOffset(text, offset) {
-    const wordRe = /[A-Za-z0-9'’]+/g;
-    let m;
-    while ((m = wordRe.exec(text)) !== null) {
-      if (offset >= m.index && offset <= m.index + m[0].length) {
-        return { start: m.index, end: m.index + m[0].length, word: m[0] };
-      }
-    }
-    return null;
-  }
-
-  function insertSingTagAtCursor() {
-    const note = els.singNoteSelect.value;
-    const beats = parseFloat(els.singBeatsInput.value) || 1;
-    const tag = `[${note}:${beats}]`;
-
-    const sel = window.getSelection();
-    let range = null;
-    if (sel && sel.rangeCount > 0 && els.editable.contains(sel.anchorNode)) {
-      range = sel.getRangeAt(0);
-    }
-
-    const fullText = els.editable.textContent || '';
-
-    if (!range) {
-      els.editable.focus();
-      els.editable.textContent = fullText + (fullText && !/\s$/.test(fullText) ? ' ' : '') + tag;
-      els.editable.dispatchEvent(new Event('input'));
-      return;
-    }
-
-    const preRange = document.createRange();
-    preRange.selectNodeContents(els.editable);
-    preRange.setEnd(range.endContainer, range.endOffset);
-    const caretOffset = preRange.toString().length;
-
-    const bounds = getWordBoundsAtOffset(fullText, caretOffset);
-    let newText;
-    let newCaret;
-    if (bounds) {
-      newText = fullText.slice(0, bounds.end) + tag + fullText.slice(bounds.end);
-      newCaret = bounds.end + tag.length;
-    } else {
-      newText = fullText.slice(0, caretOffset) + tag + fullText.slice(caretOffset);
-      newCaret = caretOffset + tag.length;
-    }
-
-    els.editable.textContent = newText;
-    els.editable.focus();
-
-    const walker = document.createTreeWalker(els.editable, NodeFilter.SHOW_TEXT, null);
-    const node = walker.nextNode();
-    if (node) {
-      const r = document.createRange();
-      const pos = Math.min(newCaret, node.textContent.length);
-      r.setStart(node, pos);
-      r.setEnd(node, pos);
-      const newSel = window.getSelection();
-      newSel.removeAllRanges();
-      newSel.addRange(r);
-    }
-
-    els.editable.dispatchEvent(new Event('input'));
-  }
-
-  els.singInsertBtn.addEventListener('click', insertSingTagAtCursor);
 
   els.jpToggle.addEventListener('change', async (e) => {
     stopPlayback();
