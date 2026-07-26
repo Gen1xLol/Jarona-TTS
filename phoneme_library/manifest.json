@@ -1,0 +1,4546 @@
+{
+  "phonemes": {
+    "AA1": {
+      "count": 16,
+      "clips": [
+        {
+          "file": "AA1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AA1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AA1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "AA1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hah",
+          "duration_ms": 340.0
+        },
+        {
+          "file": "AA1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AA1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "AA1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AA1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AA1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "AA1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AA1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AA1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "AA1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AA1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AA1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AA1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 90.0
+        }
+      ]
+    },
+    "AE1": {
+      "count": 19,
+      "clips": [
+        {
+          "file": "AE1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "AE1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 310.0
+        },
+        {
+          "file": "AE1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "AE1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AE1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AE1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AE1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AE1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AE1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AE1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "AE1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "AE1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 350.0
+        },
+        {
+          "file": "AE1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_take_that",
+          "duration_ms": 470.0
+        },
+        {
+          "file": "AE1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AE1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "AE1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "AE1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "AE1/clip0018.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "AE1/clip0019.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 430.0
+        }
+      ]
+    },
+    "AH0": {
+      "count": 57,
+      "clips": [
+        {
+          "file": "AH0/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0002.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 970.0
+        },
+        {
+          "file": "AH0/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AH0/clip0004.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0005.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0006.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AH0/clip0007.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "AH0/clip0008.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0009.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0010.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 230.0
+        },
+        {
+          "file": "AH0/clip0011.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0012.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0013.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "AH0/clip0014.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0015.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0016.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0017.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "AH0/clip0018.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "AH0/clip0019.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 330.0
+        },
+        {
+          "file": "AH0/clip0020.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0021.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AH0/clip0022.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0023.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "AH0/clip0024.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0025.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 320.0
+        },
+        {
+          "file": "AH0/clip0026.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "AH0/clip0027.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 940.0
+        },
+        {
+          "file": "AH0/clip0028.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AH0/clip0029.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "AH0/clip0030.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0031.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AH0/clip0032.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "AH0/clip0033.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AH0/clip0034.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0035.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0036.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AH0/clip0037.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0038.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0039.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0040.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0041.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0042.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0043.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0044.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0045.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AH0/clip0046.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH0/clip0047.wav",
+          "source": "snd_flowery_voiceclip_the_boys",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0048.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0049.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AH0/clip0050.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "AH0/clip0051.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AH0/clip0052.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AH0/clip0053.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AH0/clip0054.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "AH0/clip0055.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "AH0/clip0056.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AH0/clip0057.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 160.0
+        }
+      ]
+    },
+    "AH1": {
+      "count": 13,
+      "clips": [
+        {
+          "file": "AH1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AH1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AH1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "AH1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AH1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_huh",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "AH1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 320.0
+        },
+        {
+          "file": "AH1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "AH1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_powering_up",
+          "duration_ms": 1310.0
+        },
+        {
+          "file": "AH1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AH1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "AH1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "AH1/clip0012.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "AH1/clip0013.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 130.0
+        }
+      ]
+    },
+    "AO1": {
+      "count": 6,
+      "clips": [
+        {
+          "file": "AO1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AO1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "AO1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AO1/clip0004.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AO1/clip0005.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 230.0
+        },
+        {
+          "file": "AO1/clip0006.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 310.0
+        }
+      ]
+    },
+    "AW1": {
+      "count": 12,
+      "clips": [
+        {
+          "file": "AW1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "AW1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_flowery",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AW1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowery2",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AW1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AW1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AW1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "AW1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "AW1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "AW1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "AW1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AW1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "AW1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_wow",
+          "duration_ms": 410.0
+        }
+      ]
+    },
+    "AY1": {
+      "count": 35,
+      "clips": [
+        {
+          "file": "AY1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AY1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_goodbye",
+          "duration_ms": 470.0
+        },
+        {
+          "file": "AY1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 460.0
+        },
+        {
+          "file": "AY1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "AY1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "AY1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AY1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AY1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "AY1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "AY1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_heyguys",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "AY1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "AY1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "AY1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AY1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 400.0
+        },
+        {
+          "file": "AY1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "AY1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "AY1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "AY1/clip0018.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AY1/clip0019.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "AY1/clip0020.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "AY1/clip0021.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "AY1/clip0022.wav",
+          "source": "snd_flowery_voiceclip_my_king",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AY1/clip0023.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "AY1/clip0024.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "AY1/clip0025.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 310.0
+        },
+        {
+          "file": "AY1/clip0026.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 354.0
+        },
+        {
+          "file": "AY1/clip0027.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "AY1/clip0028.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "AY1/clip0029.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "AY1/clip0030.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "AY1/clip0031.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "AY1/clip0032.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "AY1/clip0033.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "AY1/clip0034.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 850.0
+        },
+        {
+          "file": "AY1/clip0035.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 200.0
+        }
+      ]
+    },
+    "B": {
+      "count": 13,
+      "clips": [
+        {
+          "file": "B/clip0001.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "B/clip0002.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "B/clip0003.wav",
+          "source": "snd_flowery_voiceclip_goodbye",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "B/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hey_boys",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "B/clip0005.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "B/clip0006.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "B/clip0007.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "B/clip0008.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "B/clip0009.wav",
+          "source": "snd_flowery_voiceclip_the_boys",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "B/clip0010.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "B/clip0011.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "B/clip0012.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "B/clip0013.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "CH": {
+      "count": 4,
+      "clips": [
+        {
+          "file": "CH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "CH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "CH/clip0003.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "CH/clip0004.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 110.0
+        }
+      ]
+    },
+    "D": {
+      "count": 24,
+      "clips": [
+        {
+          "file": "D/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0002.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "D/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "D/clip0004.wav",
+          "source": "snd_flowery_voiceclip_goodbye",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0006.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "D/clip0007.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "D/clip0008.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "D/clip0009.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "D/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0012.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "D/clip0013.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "D/clip0014.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 240.0
+        },
+        {
+          "file": "D/clip0015.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0016.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "D/clip0017.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0018.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "D/clip0019.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 230.0
+        },
+        {
+          "file": "D/clip0020.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "D/clip0021.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "D/clip0022.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "D/clip0023.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "D/clip0024.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "DH": {
+      "count": 13,
+      "clips": [
+        {
+          "file": "DH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "DH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "DH/clip0003.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "DH/clip0004.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "DH/clip0005.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "DH/clip0006.wav",
+          "source": "snd_flowery_voiceclip_take_that",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "DH/clip0007.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "DH/clip0008.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "DH/clip0009.wav",
+          "source": "snd_flowery_voiceclip_the_boys",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "DH/clip0010.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "DH/clip0011.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "DH/clip0012.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "DH/clip0013.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 40.0
+        }
+      ]
+    },
+    "EH1": {
+      "count": 21,
+      "clips": [
+        {
+          "file": "EH1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "EH1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "EH1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "EH1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "EH1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "EH1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "EH1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "EH1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "EH1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "EH1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "EH1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "EH1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 340.0
+        },
+        {
+          "file": "EH1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "EH1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "EH1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "EH1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "EH1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "EH1/clip0018.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "EH1/clip0019.wav",
+          "source": "snd_flowery_voiceclip_yes",
+          "duration_ms": 350.0
+        },
+        {
+          "file": "EH1/clip0020.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "EH1/clip0021.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 260.0
+        }
+      ]
+    },
+    "ER0": {
+      "count": 15,
+      "clips": [
+        {
+          "file": "ER0/clip0001.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "ER0/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "ER0/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "ER0/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowery",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "ER0/clip0005.wav",
+          "source": "snd_flowery_voiceclip_flowery2",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "ER0/clip0006.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "ER0/clip0007.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "ER0/clip0008.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 1510.0
+        },
+        {
+          "file": "ER0/clip0009.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "ER0/clip0010.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 980.0
+        },
+        {
+          "file": "ER0/clip0011.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "ER0/clip0012.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 370.0
+        },
+        {
+          "file": "ER0/clip0013.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "ER0/clip0014.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "ER0/clip0015.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 40.0
+        }
+      ]
+    },
+    "ER1": {
+      "count": 2,
+      "clips": [
+        {
+          "file": "ER1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "ER1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 390.0
+        }
+      ]
+    },
+    "EY1": {
+      "count": 23,
+      "clips": [
+        {
+          "file": "EY1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "EY1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "EY1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_hey",
+          "duration_ms": 330.0
+        },
+        {
+          "file": "EY1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hey_boys",
+          "duration_ms": 240.0
+        },
+        {
+          "file": "EY1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "EY1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heyguys",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "EY1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "EY1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "EY1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "EY1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "EY1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 460.0
+        },
+        {
+          "file": "EY1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "EY1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "EY1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "EY1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 350.0
+        },
+        {
+          "file": "EY1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "EY1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "EY1/clip0018.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "EY1/clip0019.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "EY1/clip0020.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "EY1/clip0021.wav",
+          "source": "snd_flowery_voiceclip_take_that",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "EY1/clip0022.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 260.0
+        },
+        {
+          "file": "EY1/clip0023.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 170.0
+        }
+      ]
+    },
+    "F": {
+      "count": 18,
+      "clips": [
+        {
+          "file": "F/clip0001.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "F/clip0002.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "F/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "F/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowery2",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "F/clip0005.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "F/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "F/clip0007.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "F/clip0008.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "F/clip0009.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "F/clip0010.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "F/clip0011.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "F/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "F/clip0013.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "F/clip0014.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "F/clip0015.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "F/clip0016.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "F/clip0017.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "F/clip0018.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 80.0
+        }
+      ]
+    },
+    "G": {
+      "count": 22,
+      "clips": [
+        {
+          "file": "G/clip0001.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "G/clip0002.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "G/clip0003.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 330.0
+        },
+        {
+          "file": "G/clip0004.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 260.0
+        },
+        {
+          "file": "G/clip0005.wav",
+          "source": "snd_flowery_voiceclip_glue",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "G/clip0006.wav",
+          "source": "snd_flowery_voiceclip_go_home",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "G/clip0007.wav",
+          "source": "snd_flowery_voiceclip_goodbye",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "G/clip0008.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "G/clip0009.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "G/clip0010.wav",
+          "source": "snd_flowery_voiceclip_heyguys",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "G/clip0011.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "G/clip0012.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "G/clip0013.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "G/clip0014.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "G/clip0015.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "G/clip0016.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "G/clip0017.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "G/clip0018.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "G/clip0019.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "G/clip0020.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "G/clip0021.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "G/clip0022.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 70.0
+        }
+      ]
+    },
+    "HH": {
+      "count": 25,
+      "clips": [
+        {
+          "file": "HH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "HH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "HH/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "HH/clip0004.wav",
+          "source": "snd_flowery_voiceclip_go_home",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "HH/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hah",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "HH/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "HH/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "HH/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "HH/clip0009.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "HH/clip0010.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "HH/clip0011.wav",
+          "source": "snd_flowery_voiceclip_hey",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "HH/clip0012.wav",
+          "source": "snd_flowery_voiceclip_hey_boys",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "HH/clip0013.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "HH/clip0014.wav",
+          "source": "snd_flowery_voiceclip_heyguys",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "HH/clip0015.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "HH/clip0016.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "HH/clip0017.wav",
+          "source": "snd_flowery_voiceclip_hoo",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "HH/clip0018.wav",
+          "source": "snd_flowery_voiceclip_huh",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "HH/clip0019.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "HH/clip0020.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "HH/clip0021.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "HH/clip0022.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "HH/clip0023.wav",
+          "source": "snd_flowery_voiceclip_powering_up",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "HH/clip0024.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "HH/clip0025.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 70.0
+        }
+      ]
+    },
+    "IH0": {
+      "count": 21,
+      "clips": [
+        {
+          "file": "IH0/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "IH0/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH0/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IH0/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH0/clip0005.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "IH0/clip0006.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH0/clip0007.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH0/clip0008.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IH0/clip0009.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH0/clip0010.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 240.0
+        },
+        {
+          "file": "IH0/clip0011.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 530.0
+        },
+        {
+          "file": "IH0/clip0012.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IH0/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH0/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IH0/clip0015.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH0/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IH0/clip0017.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IH0/clip0018.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "IH0/clip0019.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "IH0/clip0020.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH0/clip0021.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 330.0
+        }
+      ]
+    },
+    "IH1": {
+      "count": 25,
+      "clips": [
+        {
+          "file": "IH1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IH1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "IH1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IH1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_it",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_itsme",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "IH1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IH1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_kris",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "IH1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "IH1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_my_king",
+          "duration_ms": 400.0
+        },
+        {
+          "file": "IH1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "IH1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "IH1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IH1/clip0018.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH1/clip0019.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IH1/clip0020.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IH1/clip0021.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IH1/clip0022.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "IH1/clip0023.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IH1/clip0024.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IH1/clip0025.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 100.0
+        }
+      ]
+    },
+    "IY0": {
+      "count": 20,
+      "clips": [
+        {
+          "file": "IY0/clip0001.wav",
+          "source": "snd_flowery_voiceclip_flowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IY0/clip0002.wav",
+          "source": "snd_flowery_voiceclip_flowery2",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY0/clip0003.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 310.0
+        },
+        {
+          "file": "IY0/clip0004.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IY0/clip0005.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "IY0/clip0006.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY0/clip0007.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY0/clip0008.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IY0/clip0009.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IY0/clip0010.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "IY0/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY0/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IY0/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "IY0/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IY0/clip0015.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IY0/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "IY0/clip0017.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IY0/clip0018.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "IY0/clip0019.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY0/clip0020.wav",
+          "source": "snd_flowery_voiceclip_susie",
+          "duration_ms": 500.0
+        }
+      ]
+    },
+    "IY1": {
+      "count": 17,
+      "clips": [
+        {
+          "file": "IY1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "IY1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IY1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IY1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "IY1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_itsme",
+          "duration_ms": 173.3
+        },
+        {
+          "file": "IY1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 410.0
+        },
+        {
+          "file": "IY1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "IY1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 610.0
+        },
+        {
+          "file": "IY1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "IY1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IY1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "IY1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "IY1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "IY1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 240.0
+        },
+        {
+          "file": "IY1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "IY1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "IY1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 60.0
+        }
+      ]
+    },
+    "JH": {
+      "count": 11,
+      "clips": [
+        {
+          "file": "JH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "JH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "JH/clip0003.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "JH/clip0004.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "JH/clip0005.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "JH/clip0006.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "JH/clip0007.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "JH/clip0008.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "JH/clip0009.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 270.0
+        },
+        {
+          "file": "JH/clip0010.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "JH/clip0011.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 330.0
+        }
+      ]
+    },
+    "K": {
+      "count": 22,
+      "clips": [
+        {
+          "file": "K/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "K/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "K/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "K/clip0004.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "K/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "K/clip0006.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "K/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "K/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "K/clip0009.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "K/clip0010.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "K/clip0011.wav",
+          "source": "snd_flowery_voiceclip_kris",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "K/clip0012.wav",
+          "source": "snd_flowery_voiceclip_my_king",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "K/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "K/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "K/clip0015.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "K/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "K/clip0017.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "K/clip0018.wav",
+          "source": "snd_flowery_voiceclip_take_that",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "K/clip0019.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "K/clip0020.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "K/clip0021.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "K/clip0022.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 110.0
+        }
+      ]
+    },
+    "L": {
+      "count": 41,
+      "clips": [
+        {
+          "file": "L/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "L/clip0002.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "L/clip0003.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "L/clip0004.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "L/clip0005.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "L/clip0006.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "L/clip0007.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "L/clip0008.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "L/clip0009.wav",
+          "source": "snd_flowery_voiceclip_flowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0010.wav",
+          "source": "snd_flowery_voiceclip_flowery2",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0011.wav",
+          "source": "snd_flowery_voiceclip_glue",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "L/clip0012.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "L/clip0013.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "L/clip0014.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "L/clip0015.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "L/clip0016.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0017.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0018.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "L/clip0019.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0020.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "L/clip0021.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "L/clip0022.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "L/clip0023.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "L/clip0024.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0025.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0026.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "L/clip0027.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "L/clip0028.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "L/clip0029.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "L/clip0030.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0031.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "L/clip0032.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "L/clip0033.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "L/clip0034.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "L/clip0035.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "L/clip0036.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "L/clip0037.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "L/clip0038.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "L/clip0039.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "L/clip0040.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "L/clip0041.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 40.0
+        }
+      ]
+    },
+    "M": {
+      "count": 33,
+      "clips": [
+        {
+          "file": "M/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0002.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "M/clip0003.wav",
+          "source": "snd_flowery_voiceclip_go_home",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "M/clip0004.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "M/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 25.4
+        },
+        {
+          "file": "M/clip0006.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "M/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0009.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "M/clip0010.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "M/clip0011.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "M/clip0012.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "M/clip0013.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "M/clip0014.wav",
+          "source": "snd_flowery_voiceclip_itsme",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "M/clip0015.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "M/clip0016.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "M/clip0017.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "M/clip0018.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "M/clip0019.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "M/clip0020.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "M/clip0021.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0022.wav",
+          "source": "snd_flowery_voiceclip_my_king",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "M/clip0023.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0024.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "M/clip0025.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 290.0
+        },
+        {
+          "file": "M/clip0026.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "M/clip0027.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "M/clip0028.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "M/clip0029.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "M/clip0030.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "M/clip0031.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "M/clip0032.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "M/clip0033.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "N": {
+      "count": 49,
+      "clips": [
+        {
+          "file": "N/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0002.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0005.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0006.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0007.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "N/clip0008.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0009.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0010.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0011.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0012.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0013.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0014.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "N/clip0015.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0016.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0017.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "N/clip0018.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0019.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "N/clip0020.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "N/clip0021.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0022.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0023.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0024.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "N/clip0025.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "N/clip0026.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0027.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0028.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "N/clip0029.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 390.0
+        },
+        {
+          "file": "N/clip0030.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "N/clip0031.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 340.0
+        },
+        {
+          "file": "N/clip0032.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "N/clip0033.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "N/clip0034.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "N/clip0035.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0036.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0037.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "N/clip0038.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "N/clip0039.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "N/clip0040.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "N/clip0041.wav",
+          "source": "snd_flowery_voiceclip_the_diner",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "N/clip0042.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0043.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "N/clip0044.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0045.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "N/clip0046.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "N/clip0047.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "N/clip0048.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "N/clip0049.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "NG": {
+      "count": 13,
+      "clips": [
+        {
+          "file": "NG/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "NG/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "NG/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "NG/clip0004.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "NG/clip0005.wav",
+          "source": "snd_flowery_voiceclip_im_falling",
+          "duration_ms": 370.0
+        },
+        {
+          "file": "NG/clip0006.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "NG/clip0007.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "NG/clip0008.wav",
+          "source": "snd_flowery_voiceclip_my_king",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "NG/clip0009.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "NG/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 360.0
+        },
+        {
+          "file": "NG/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "NG/clip0012.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "NG/clip0013.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 180.0
+        }
+      ]
+    },
+    "OW0": {
+      "count": 2,
+      "clips": [
+        {
+          "file": "OW0/clip0001.wav",
+          "source": "snd_flowery_voiceclip_omega_flowery",
+          "duration_ms": 220.0
+        },
+        {
+          "file": "OW0/clip0002.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 480.0
+        }
+      ]
+    },
+    "OW1": {
+      "count": 18,
+      "clips": [
+        {
+          "file": "OW1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "OW1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_go_home",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "OW1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_go_home",
+          "duration_ms": 610.0
+        },
+        {
+          "file": "OW1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "OW1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "OW1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "OW1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "OW1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "OW1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "OW1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 330.0
+        },
+        {
+          "file": "OW1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "OW1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "OW1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "OW1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 230.0
+        },
+        {
+          "file": "OW1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "OW1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "OW1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_nonono",
+          "duration_ms": 330.0
+        },
+        {
+          "file": "OW1/clip0018.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 660.0
+        }
+      ]
+    },
+    "OY1": {
+      "count": 2,
+      "clips": [
+        {
+          "file": "OY1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_hey_boys",
+          "duration_ms": 340.0
+        },
+        {
+          "file": "OY1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_the_boys",
+          "duration_ms": 340.0
+        }
+      ]
+    },
+    "P": {
+      "count": 17,
+      "clips": [
+        {
+          "file": "P/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "P/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "P/clip0003.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "P/clip0004.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "P/clip0005.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "P/clip0006.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "P/clip0007.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "P/clip0008.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "P/clip0009.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "P/clip0010.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "P/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "P/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "P/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "P/clip0014.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "P/clip0015.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 410.0
+        },
+        {
+          "file": "P/clip0016.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "P/clip0017.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "R": {
+      "count": 54,
+      "clips": [
+        {
+          "file": "R/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0002.wav",
+          "source": "snd_flowery_voiceclip_calling_for_help",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "R/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "R/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "R/clip0005.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "R/clip0006.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "R/clip0007.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "R/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicome",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "R/clip0009.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "R/clip0010.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "R/clip0011.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "R/clip0012.wav",
+          "source": "snd_flowery_voiceclip_hey_raly",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "R/clip0013.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "R/clip0014.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "R/clip0015.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "R/clip0016.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "R/clip0017.wav",
+          "source": "snd_flowery_voiceclip_jarona1",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "R/clip0018.wav",
+          "source": "snd_flowery_voiceclip_jarona2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "R/clip0019.wav",
+          "source": "snd_flowery_voiceclip_jarona3",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "R/clip0020.wav",
+          "source": "snd_flowery_voiceclip_jarona4",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "R/clip0021.wav",
+          "source": "snd_flowery_voiceclip_kris",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "R/clip0022.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "R/clip0023.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "R/clip0024.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "R/clip0025.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0026.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "R/clip0027.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "R/clip0028.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "R/clip0029.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "R/clip0030.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "R/clip0031.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "R/clip0032.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0033.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0034.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "R/clip0035.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "R/clip0036.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "R/clip0037.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "R/clip0038.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "R/clip0039.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "R/clip0040.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "R/clip0041.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0042.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "R/clip0043.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0044.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "R/clip0045.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "R/clip0046.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "R/clip0047.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "R/clip0048.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "R/clip0049.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "R/clip0050.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "R/clip0051.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "R/clip0052.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "R/clip0053.wav",
+          "source": "snd_jarona_orange1",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "R/clip0054.wav",
+          "source": "snd_jarona_orange2",
+          "duration_ms": 110.0
+        }
+      ]
+    },
+    "S": {
+      "count": 42,
+      "clips": [
+        {
+          "file": "S/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "S/clip0002.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "S/clip0003.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 270.0
+        },
+        {
+          "file": "S/clip0004.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "S/clip0005.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "S/clip0006.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisc",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "S/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_strong",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "S/clip0008.wav",
+          "source": "snd_flowery_voiceclip_hereicomesanfrandisco_weak",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "S/clip0009.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "S/clip0010.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "S/clip0011.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "S/clip0012.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "S/clip0013.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "S/clip0014.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0015.wav",
+          "source": "snd_flowery_voiceclip_itsme",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "S/clip0016.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "S/clip0017.wav",
+          "source": "snd_flowery_voiceclip_kris",
+          "duration_ms": 360.0
+        },
+        {
+          "file": "S/clip0018.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 420.0
+        },
+        {
+          "file": "S/clip0019.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "S/clip0020.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0021.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "S/clip0022.wav",
+          "source": "snd_flowery_voiceclip_sanfran",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "S/clip0023.wav",
+          "source": "snd_flowery_voiceclip_say_that_again",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "S/clip0024.wav",
+          "source": "snd_flowery_voiceclip_smile_again",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0025.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0026.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0027.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "S/clip0028.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "S/clip0029.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "S/clip0030.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "S/clip0031.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "S/clip0032.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 200.0
+        },
+        {
+          "file": "S/clip0033.wav",
+          "source": "snd_flowery_voiceclip_spiral_dance",
+          "duration_ms": 350.0
+        },
+        {
+          "file": "S/clip0034.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 180.0
+        },
+        {
+          "file": "S/clip0035.wav",
+          "source": "snd_flowery_voiceclip_susie",
+          "duration_ms": 130.0
+        },
+        {
+          "file": "S/clip0036.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "S/clip0037.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "S/clip0038.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "S/clip0039.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "S/clip0040.wav",
+          "source": "snd_flowery_voiceclip_yes",
+          "duration_ms": 253.3
+        },
+        {
+          "file": "S/clip0041.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "S/clip0042.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 200.0
+        }
+      ]
+    },
+    "SH": {
+      "count": 2,
+      "clips": [
+        {
+          "file": "SH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 190.0
+        },
+        {
+          "file": "SH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 320.0
+        }
+      ]
+    },
+    "T": {
+      "count": 56,
+      "clips": [
+        {
+          "file": "T/clip0001.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0002.wav",
+          "source": "snd_flowery_voiceclip_all_according_to_all_according_to_plant",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "T/clip0003.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 210.0
+        },
+        {
+          "file": "T/clip0005.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0006.wav",
+          "source": "snd_flowery_voiceclip_forget_it",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "T/clip0007.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0008.wav",
+          "source": "snd_flowery_voiceclip_get_a_chance_2",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0009.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0010.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0011.wav",
+          "source": "snd_flowery_voiceclip_great_style",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "T/clip0012.wav",
+          "source": "snd_flowery_voiceclip_grown_like_a_turnip",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "T/clip0013.wav",
+          "source": "snd_flowery_voiceclip_heh_it_s_my_jarona",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0014.wav",
+          "source": "snd_flowery_voiceclip_heytherelittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0015.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "T/clip0016.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0017.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0018.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0019.wav",
+          "source": "snd_flowery_voiceclip_it",
+          "duration_ms": 26.0
+        },
+        {
+          "file": "T/clip0020.wav",
+          "source": "snd_flowery_voiceclip_its_all_in_a_name",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0021.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0022.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0023.wav",
+          "source": "snd_flowery_voiceclip_itsme",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "T/clip0024.wav",
+          "source": "snd_flowery_voiceclip_itsmeflowery",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0025.wav",
+          "source": "snd_flowery_voiceclip_last_jarona",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0026.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "T/clip0027.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0028.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0029.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "T/clip0030.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "T/clip0031.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0032.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0033.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0034.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0035.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0036.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatlittleguy",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0037.wav",
+          "source": "snd_flowery_voiceclip_sorryabouttheguy",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "T/clip0038.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0039.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0040.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0041.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0042.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0043.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0044.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0045.wav",
+          "source": "snd_flowery_voiceclip_suckle_it_up",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "T/clip0046.wav",
+          "source": "snd_flowery_voiceclip_take_that",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "T/clip0047.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0048.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "T/clip0049.wav",
+          "source": "snd_flowery_voiceclip_thatsgreat",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "T/clip0050.wav",
+          "source": "snd_flowery_voiceclip_theyre_eating_my_flesh",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0051.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0052.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "T/clip0053.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0054.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0055.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "T/clip0056.wav",
+          "source": "snd_ja_kidding",
+          "duration_ms": 130.0
+        }
+      ]
+    },
+    "TH": {
+      "count": 2,
+      "clips": [
+        {
+          "file": "TH/clip0001.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "TH/clip0002.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 100.0
+        }
+      ]
+    },
+    "UH1": {
+      "count": 7,
+      "clips": [
+        {
+          "file": "UH1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "UH1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "UH1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "UH1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "UH1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 160.0
+        },
+        {
+          "file": "UH1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "UH1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 90.0
+        }
+      ]
+    },
+    "UH2": {
+      "count": 1,
+      "clips": [
+        {
+          "file": "UH2/clip0001.wav",
+          "source": "snd_flowery_voiceclip_goodbye",
+          "duration_ms": 90.0
+        }
+      ]
+    },
+    "UW1": {
+      "count": 17,
+      "clips": [
+        {
+          "file": "UW1/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 250.0
+        },
+        {
+          "file": "UW1/clip0002.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "UW1/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "UW1/clip0004.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 304.8
+        },
+        {
+          "file": "UW1/clip0005.wav",
+          "source": "snd_flowery_voiceclip_glue",
+          "duration_ms": 333.3
+        },
+        {
+          "file": "UW1/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 410.0
+        },
+        {
+          "file": "UW1/clip0007.wav",
+          "source": "snd_flowery_voiceclip_hoo",
+          "duration_ms": 380.0
+        },
+        {
+          "file": "UW1/clip0008.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 38.7
+        },
+        {
+          "file": "UW1/clip0009.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 280.0
+        },
+        {
+          "file": "UW1/clip0010.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "UW1/clip0011.wav",
+          "source": "snd_flowery_voiceclip_leaf_it_to_me",
+          "duration_ms": 120.0
+        },
+        {
+          "file": "UW1/clip0012.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 460.0
+        },
+        {
+          "file": "UW1/clip0013.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "UW1/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "UW1/clip0015.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "UW1/clip0016.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "UW1/clip0017.wav",
+          "source": "snd_flowery_voiceclip_susie",
+          "duration_ms": 160.0
+        }
+      ]
+    },
+    "V": {
+      "count": 4,
+      "clips": [
+        {
+          "file": "V/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "V/clip0002.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "V/clip0003.wav",
+          "source": "snd_flowery_voiceclip_my_favorite_two",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "V/clip0004.wav",
+          "source": "snd_flowery_voiceclip_try_my_flavor",
+          "duration_ms": 30.0
+        }
+      ]
+    },
+    "W": {
+      "count": 11,
+      "clips": [
+        {
+          "file": "W/clip0001.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "W/clip0002.wav",
+          "source": "snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "W/clip0003.wav",
+          "source": "snd_flowery_voiceclip_mysterious_wind",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "W/clip0004.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "W/clip0005.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepaladyinwaiting",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "W/clip0006.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "W/clip0007.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "W/clip0008.wav",
+          "source": "snd_flowery_voiceclip_what_a_predictable_creature",
+          "duration_ms": 170.0
+        },
+        {
+          "file": "W/clip0009.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "W/clip0010.wav",
+          "source": "snd_flowery_voiceclip_wow",
+          "duration_ms": 140.0
+        },
+        {
+          "file": "W/clip0011.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 60.0
+        }
+      ]
+    },
+    "Y": {
+      "count": 20,
+      "clips": [
+        {
+          "file": "Y/clip0001.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "Y/clip0002.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 60.0
+        },
+        {
+          "file": "Y/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Y/clip0004.wav",
+          "source": "snd_flowery_voiceclip_give_to_you",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "Y/clip0005.wav",
+          "source": "snd_flowery_voiceclip_huhillshowyou",
+          "duration_ms": 150.0
+        },
+        {
+          "file": "Y/clip0006.wav",
+          "source": "snd_flowery_voiceclip_im_only_trying_to_help_you",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "Y/clip0007.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "Y/clip0008.wav",
+          "source": "snd_flowery_voiceclip_its_so_human",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "Y/clip0009.wav",
+          "source": "snd_flowery_voiceclip_lend_me_your_power",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "Y/clip0010.wav",
+          "source": "snd_flowery_voiceclip_my_human",
+          "duration_ms": 110.0
+        },
+        {
+          "file": "Y/clip0011.wav",
+          "source": "snd_flowery_voiceclip_no_way_its_your_children",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "Y/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Y/clip0013.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting1",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Y/clip0014.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouwaiting2",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Y/clip0015.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "Y/clip0016.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "Y/clip0017.wav",
+          "source": "snd_flowery_voiceclip_yes",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "Y/clip0018.wav",
+          "source": "snd_flowery_voiceclip_your_dad",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "Y/clip0019.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "Y/clip0020.wav",
+          "source": "snd_flowery_voiceclip_youre_a_hero",
+          "duration_ms": 170.0
+        }
+      ]
+    },
+    "Z": {
+      "count": 19,
+      "clips": [
+        {
+          "file": "Z/clip0001.wav",
+          "source": "snd_flowery_voiceclip_blingo_blizzard",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "Z/clip0002.wav",
+          "source": "snd_flowery_voiceclip_dont_you_like_serving_humans",
+          "duration_ms": 240.0
+        },
+        {
+          "file": "Z/clip0003.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 40.0
+        },
+        {
+          "file": "Z/clip0004.wav",
+          "source": "snd_flowery_voiceclip_flowers_blooms_in_your_heart",
+          "duration_ms": 90.0
+        },
+        {
+          "file": "Z/clip0005.wav",
+          "source": "snd_flowery_voiceclip_hey_boys",
+          "duration_ms": 300.0
+        },
+        {
+          "file": "Z/clip0006.wav",
+          "source": "snd_flowery_voiceclip_heyguys",
+          "duration_ms": 151.3
+        },
+        {
+          "file": "Z/clip0007.wav",
+          "source": "snd_flowery_voiceclip_heyguysithinkifoundaglue",
+          "duration_ms": 230.0
+        },
+        {
+          "file": "Z/clip0008.wav",
+          "source": "snd_flowery_voiceclip_its_all_yours",
+          "duration_ms": 30.0
+        },
+        {
+          "file": "Z/clip0009.wav",
+          "source": "snd_flowery_voiceclip_minipeppers",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "Z/clip0010.wav",
+          "source": "snd_flowery_voiceclip_prism_blow",
+          "duration_ms": 70.0
+        },
+        {
+          "file": "Z/clip0011.wav",
+          "source": "snd_flowery_voiceclip_sorryaboutthatguys",
+          "duration_ms": 283.3
+        },
+        {
+          "file": "Z/clip0012.wav",
+          "source": "snd_flowery_voiceclip_sorrytokeepyouladies",
+          "duration_ms": 82.0
+        },
+        {
+          "file": "Z/clip0013.wav",
+          "source": "snd_flowery_voiceclip_susie",
+          "duration_ms": 80.0
+        },
+        {
+          "file": "Z/clip0014.wav",
+          "source": "snd_flowery_voiceclip_thats_my_dreams",
+          "duration_ms": 260.0
+        },
+        {
+          "file": "Z/clip0015.wav",
+          "source": "snd_flowery_voiceclip_the_boys",
+          "duration_ms": 270.0
+        },
+        {
+          "file": "Z/clip0016.wav",
+          "source": "snd_flowery_voiceclip_thisguysyourbestfriend",
+          "duration_ms": 100.0
+        },
+        {
+          "file": "Z/clip0017.wav",
+          "source": "snd_flowery_voiceclip_with_your_powers_combined",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Z/clip0018.wav",
+          "source": "snd_flowery_voiceclip_yourdadsmybestfriend",
+          "duration_ms": 50.0
+        },
+        {
+          "file": "Z/clip0019.wav",
+          "source": "snd_forthefans",
+          "duration_ms": 300.0
+        }
+      ]
+    }
+  },
+  "total_clips": 864,
+  "stress_stripped": false
+}
