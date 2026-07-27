@@ -8,10 +8,37 @@
   const LOCALSTORAGE_KEY_JP = 'jarona_tts_use_jp';
 
   const WORD_GAP = 0.038;
+  const FUNCTION_WORDS = new Set([
+    'a', 'an', 'the', 'of', 'to', 'in', 'on', 'at', 'for', 'and', 'or', 'but',
+    'is', 'are', 'was', 'were', 'be', 'been', 'am', 'it', 'its', 'as', 'by',
+    'with', 'from', 'that', 'this', 'so', 'if', 'than', 'then', 'my', 'your',
+    'his', 'her', 'their', 'our', 'i', 'you', 'he', 'she', 'we', 'they',
+  ]);
+
+  function computeWordGap(currWordText, nextWordText, seedKey) {
+    const curr = (currWordText || '').toLowerCase();
+    const next = (nextWordText || '').toLowerCase();
+    let gap = WORD_GAP;
+
+    if (FUNCTION_WORDS.has(curr) || FUNCTION_WORDS.has(next)) {
+      gap *= 0.55;
+    } else if (curr.length >= 7 || next.length >= 7) {
+      gap *= 1.25;
+    }
+
+    const hashVal = hashString(`gap::${seedKey}`);
+    const jitter = ((hashVal % 21) - 10) * 0.0006;
+    gap = Math.max(0.01, gap + jitter);
+
+    return gap;
+  }
 
   const PHONEME_GAP = 0.002;
 
-  const PAUSE_PUNCT = { '.': 0.28, '!': 0.28, '?': 0.3, ',': 0.16, ';': 0.2, ':': 0.2 };
+  const PAUSE_PUNCT = {
+    '.': 0.28, '!': 0.3, '?': 0.32, ',': 0.16, ';': 0.2, ':': 0.2,
+    dash: 0.22, ellipsis: 0.42,
+  };
 
   const els = {
     editable: document.getElementById('editable'),
@@ -61,6 +88,41 @@
   const analyser = actx.createAnalyser();
   analyser.fftSize = 1024;
   analyser.connect(actx.destination);
+
+  const audioWorker = new Worker('audio-worker.js');
+  const pendingRenderRequests = new Map();
+  let renderRequestSeq = 0;
+
+  audioWorker.onmessage = (e) => {
+    const msg = e.data;
+    if (!msg || !msg.requestId) return;
+    const pending = pendingRenderRequests.get(msg.requestId);
+    if (!pending) return;
+    pendingRenderRequests.delete(msg.requestId);
+
+    if (msg.type === 'rendered') {
+      pending.resolve(msg);
+    } else if (msg.type === 'error') {
+      pending.reject(new Error(msg.message || 'audio worker render failed'));
+    }
+  };
+
+  audioWorker.onerror = (err) => {
+    console.error('audio worker error:', err);
+
+    pendingRenderRequests.forEach(({ reject }) => reject(new Error('audio worker crashed')));
+    pendingRenderRequests.clear();
+  };
+
+  function renderInWorker(payload) {
+    return new Promise((resolve, reject) => {
+      const requestId = ++renderRequestSeq;
+      pendingRenderRequests.set(requestId, { resolve, reject });
+
+      const transferList = Object.values(payload.clipBuffers).map((c) => c.channelData.buffer);
+      audioWorker.postMessage({ type: 'render', requestId, ...payload }, transferList);
+    });
+  }
 
   const library = new Map();
 
@@ -356,25 +418,177 @@
     dictReady = true;
   }
 
+  const NUM_ONES = [
+    '', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen',
+    'seventeen', 'eighteen', 'nineteen',
+  ];
+  const NUM_TENS = [
+    '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
+  ];
+  const ORDINAL_IRREGULAR = {
+    one: 'first', two: 'second', three: 'third', five: 'fifth',
+    eight: 'eighth', nine: 'ninth', twelve: 'twelfth',
+  };
+  const SYMBOL_WORDS = {
+    '%': ['percent'], '&': ['and'], '+': ['plus'], '=': ['equals'],
+    '$': ['dollars'], '#': ['number'], '@': ['at'],
+  };
+
+  const ABBREVIATIONS = {
+    mr: ['mister'], mrs: ['missus'], ms: ['miz'], dr: ['doctor'],
+    st: ['saint'], jr: ['junior'], sr: ['senior'], prof: ['professor'],
+    vs: ['versus'], etc: ['et', 'cetera'], approx: ['approximately'],
+    mt: ['mount'], ave: ['avenue'], blvd: ['boulevard'], rd: ['road'],
+  };
+
+  function numChunkToWords(num) {
+    const parts = [];
+    if (num >= 100) {
+      parts.push(NUM_ONES[Math.floor(num / 100)], 'hundred');
+      num %= 100;
+    }
+    if (num >= 20) {
+      parts.push(NUM_TENS[Math.floor(num / 10)]);
+      if (num % 10) parts.push(NUM_ONES[num % 10]);
+    } else if (num > 0) {
+      parts.push(NUM_ONES[num]);
+    }
+    return parts;
+  }
+
+  function numberToWords(nStr) {
+    const n = parseInt(nStr, 10);
+    if (!Number.isFinite(n)) return [nStr];
+    if (n === 0) return ['zero'];
+    if (Math.abs(n) > 999999999) return nStr.split('').map((d) => NUM_ONES[+d] || d);
+
+    const neg = n < 0;
+    let num = Math.abs(n);
+    const millions = Math.floor(num / 1000000); num %= 1000000;
+    const thousands = Math.floor(num / 1000); num %= 1000;
+    const rest = num;
+
+    const words = [];
+    if (neg) words.push('negative');
+    if (millions) words.push(...numChunkToWords(millions), 'million');
+    if (thousands) words.push(...numChunkToWords(thousands), 'thousand');
+    if (rest || words.length === (neg ? 1 : 0)) words.push(...numChunkToWords(rest));
+    return words;
+  }
+
+  function ordinalToWords(nStr) {
+    const words = numberToWords(nStr);
+    const last = words[words.length - 1];
+    words[words.length - 1] = ORDINAL_IRREGULAR[last]
+      || (last.endsWith('y') ? last.slice(0, -1) + 'ieth' : last + 'th');
+    return words;
+  }
+
+  function expandTextToken(rawText) {
+    const ordinalMatch = rawText.match(/^(\d+)(?:st|nd|rd|th)$/i);
+    if (ordinalMatch) return ordinalToWords(ordinalMatch[1]);
+    if (/^\d+$/.test(rawText)) return numberToWords(rawText);
+    if (SYMBOL_WORDS[rawText]) return SYMBOL_WORDS[rawText];
+
+    if (/[a-zA-Z]\.$/.test(rawText)) {
+      const key = rawText.slice(0, -1).toLowerCase();
+      if (ABBREVIATIONS[key]) return ABBREVIATIONS[key];
+    }
+    return null;
+  }
+
+  const IRREGULAR_WORDS = {
+    though: ['DH', 'OW1'],
+    through: ['TH', 'R', 'UW1'],
+    thorough: ['TH', 'ER1', 'OW0'],
+    thoroughly: ['TH', 'ER1', 'OW0', 'L', 'IY0'],
+    thought: ['TH', 'AO1', 'T'],
+    thoughtful: ['TH', 'AO1', 'T', 'F', 'AH0', 'L'],
+    bought: ['B', 'AO1', 'T'],
+    brought: ['B', 'R', 'AO1', 'T'],
+    fought: ['F', 'AO1', 'T'],
+    ought: ['AO1', 'T'],
+    sought: ['S', 'AO1', 'T'],
+    nought: ['N', 'AO1', 'T'],
+    wrought: ['R', 'AO1', 'T'],
+    enough: ['IH0', 'N', 'AH1', 'F'],
+    tough: ['T', 'AH1', 'F'],
+    rough: ['R', 'AH1', 'F'],
+    cough: ['K', 'AO1', 'F'],
+    trough: ['T', 'R', 'AO1', 'F'],
+    dough: ['D', 'OW1'],
+    although: ['AO2', 'L', 'DH', 'OW1'],
+    borough: ['B', 'ER1', 'OW0'],
+    psychology: ['S', 'AY0', 'K', 'AA1', 'L', 'AH0', 'JH', 'IY0'],
+    psychological: ['S', 'AY0', 'K', 'AH0', 'L', 'AA1', 'JH', 'IH0', 'K', 'AH0', 'L'],
+    psychic: ['S', 'AY1', 'K', 'IH0', 'K'],
+    psalm: ['S', 'AA1', 'M'],
+    pneumonia: ['N', 'UW0', 'M', 'OW1', 'N', 'Y', 'AH0'],
+    pneumatic: ['N', 'UW0', 'M', 'AE1', 'T', 'IH0', 'K'],
+  };
+
+  const MAGIC_E_LONG_VOWEL = { a: 'EY', e: 'IY', i: 'AY', o: 'OW', u: 'UW' };
+
+  const CONSONANT_G2P = {
+    b: ['B'], c: ['K'], d: ['D'], f: ['F'], g: ['G'], k: ['K'],
+    l: ['L'], m: ['M'], n: ['N'], p: ['P'], s: ['S'],
+    t: ['T'], v: ['V'], th: ['TH'], ch: ['CH'], sh: ['SH'], ph: ['F'],
+    ck: ['K'], ng: ['NG'],
+  };
+
+  function findMagicE(remaining) {
+    const m = remaining.match(/^([aeiou])(b|c|d|f|g|k|l|m|n|p|s|t|v|th|ch|sh|ph|ck|ng)e$/);
+    if (!m) return null;
+    return { vowel: m[1], consonantSeq: m[2], len: m[0].length };
+  }
+
+  function countSyllablesRough(w) {
+    let count = 0;
+    let prevWasVowel = false;
+    for (let i = 0; i < w.length; i++) {
+      const isV = 'aeiouy'.includes(w[i]);
+      if (isV && !prevWasVowel) count++;
+      prevWasVowel = isV;
+    }
+    if (w.endsWith('e') && !w.endsWith('le') && count > 1) count--;
+    return Math.max(1, count);
+  }
+
   const G2P_RULES = [
-    [/^ing/, ['IH0', 'NG'], 3],
-    [/^tion/, ['SH', 'AH0', 'N'], 4],
-    [/^sion/, ['ZH', 'AH0', 'N'], 4],
-    [/^ough/, ['AH1', 'F'], 4],
-    [/^augh/, ['AE1', 'F'], 4],
-    [/^eigh/, ['EY1'], 4],
-    [/^ture/, ['CH', 'ER0'], 4],
-    [/^ous/, ['AH0', 'S'], 3],
+    [/^ough/, ['AH', 'F'], 4],
+    [/^augh/, ['AE', 'F'], 4],
+    [/^eigh/, ['EY'], 4],
+    [/^ing(?=$)/, ['IH', 'NG'], 3],
+    [/^tion/, ['SH', 'AH', 'N'], 4],
+    [/^sion/, ['ZH', 'AH', 'N'], 4],
+    [/^ture/, ['CH', 'ER'], 4],
+    [/^ous/, ['AH', 'S'], 3],
     [/^dge/, ['JH'], 3],
     [/^tch/, ['CH'], 3],
-    [/^igh/, ['AY1'], 3],
+    [/^igh/, ['AY'], 3],
     [/^sch/, ['SH'], 3],
-    [/^the/, ['DH', 'AH0'], 3],
-    [/^er/, ['ER0'], 2],
-    [/^ly/, ['L', 'IY0'], 2],
-    [/^le/, ['L'], 2],
-    [/^ed/, ['D'], 2],
-    [/^es/, ['IH0', 'Z'], 2],
+    [/^the(?=$)/, ['DH', 'AH'], 3],
+    [/^ps(?=[aeiouy])/, [], 2],
+    [/^pn(?=[aeiouy])/, ['N'], 2],
+    [/^are(?=$)/, ['AA', 'R'], 3],
+    [/^ore(?=$)/, ['AO', 'R'], 3],
+    [/^ure(?=$)/, ['Y', 'UH', 'R'], 3],
+    [/^ire(?=$)/, ['AY', 'ER'], 3],
+    [/^arr(?=[aeiouy])/, ['AE', 'R'], 3],
+    [/^orr(?=[aeiouy])/, ['AO', 'R'], 3],
+    [/^err(?=[aeiouy])/, ['EH', 'R'], 3],
+    [/^irr(?=[aeiouy])/, ['IH', 'R'], 3],
+    [/^urr(?=[aeiouy])/, ['ER'], 3],
+    [/^ar(?=[^aeiouyr])|^ar(?=$)/, ['AA', 'R'], 2],
+    [/^or(?=[^aeiouyr])|^or(?=$)/, ['AO', 'R'], 2],
+    [/^ur(?=[^aeiouyr])|^ur(?=$)/, ['ER'], 2],
+    [/^ir(?=[^aeiouyr])|^ir(?=$)/, ['ER'], 2],
+    [/^er(?=[^aeiouyr])|^er(?=$)/, ['ER'], 2],
+    [/^ly(?=$)/, ['L', 'IY'], 2],
+    [/^le(?=$)/, ['AH', 'L'], 2],
+    [/^ed(?=$)/, ['D'], 2],
+    [/^es(?=$)/, ['IH', 'Z'], 2],
     [/^ck/, ['K'], 2],
     [/^ph/, ['F'], 2],
     [/^th/, ['TH'], 2],
@@ -386,27 +600,31 @@
     [/^gh/, ['G'], 2],
     [/^kn/, ['N'], 2],
     [/^wr/, ['R'], 2],
-    [/^ee/, ['IY1'], 2],
-    [/^ea/, ['IY1'], 2],
-    [/^ai/, ['EY1'], 2],
-    [/^ay/, ['EY1'], 2],
-    [/^oa/, ['OW1'], 2],
-    [/^oo/, ['UW1'], 2],
-    [/^ou/, ['AW1'], 2],
-    [/^ow/, ['AW1'], 2],
-    [/^oi/, ['OY1'], 2],
-    [/^oy/, ['OY1'], 2],
-    [/^au/, ['AO1'], 2],
-    [/^aw/, ['AO1'], 2],
-    [/^ie/, ['IY1'], 2],
-    [/^ue/, ['UW1'], 2],
-    [/^a/, ['AE1'], 1],
-    [/^e/, ['EH1'], 1],
-    [/^i/, ['IH1'], 1],
-    [/^o/, ['AA1'], 1],
-    [/^u/, ['AH1'], 1],
-    [/^y/, ['IH1'], 1],
+    [/^gn/, ['N'], 2],
+    [/^ee/, ['IY'], 2],
+    [/^ea/, ['IY'], 2],
+    [/^ai/, ['EY'], 2],
+    [/^ay/, ['EY'], 2],
+    [/^oa/, ['OW'], 2],
+    [/^oo/, ['UW'], 2],
+    [/^ou/, ['AW'], 2],
+    [/^ow/, ['AW'], 2],
+    [/^oi/, ['OY'], 2],
+    [/^oy/, ['OY'], 2],
+    [/^au/, ['AO'], 2],
+    [/^aw/, ['AO'], 2],
+    [/^ie/, ['IY'], 2],
+    [/^ue/, ['UW'], 2],
+    [/^a(?=$)/, ['AH'], 1],
+    [/^a/, ['AE'], 1],
+    [/^e(?=$)/, [], 1],
+    [/^e/, ['EH'], 1],
+    [/^i/, ['IH'], 1],
+    [/^o/, ['AA'], 1],
+    [/^u/, ['AH'], 1],
+    [/^y/, ['IH'], 1],
     [/^b/, ['B'], 1],
+    [/^c(?=[eiy])/, ['S'], 1],
     [/^c/, ['K'], 1],
     [/^d/, ['D'], 1],
     [/^f/, ['F'], 1],
@@ -427,38 +645,78 @@
     [/^z/, ['Z'], 1],
   ];
 
-  function ruleBasedG2P(word) {
-    const w = word.toLowerCase().replace(/[^a-z']/g, '');
-    if (!w) return [];
-    let i = 0;
-    const out = [];
-    while (i < w.length) {
-      const rest = w.slice(i);
-      let matched = false;
-      for (const [re, phones, len] of G2P_RULES) {
-        if (re.test(rest)) {
-          if (rest === 'e' && out.length > 0) { i += 1; matched = true; break; }
-          out.push(...phones);
-          i += len;
-          matched = true;
-          break;
-        }
-      }
-      if (!matched) i += 1;
+  const G2P_VOWEL_BASE_RE = /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)$/;
+
+  function applyPrimaryStress(out) {
+    const vowelIdxs = [];
+    for (let k = 0; k < out.length; k++) {
+      if (G2P_VOWEL_BASE_RE.test(out[k])) vowelIdxs.push(k);
     }
-    if (!out.some(p => /[12]$/.test(p))) {
-      for (let k = 0; k < out.length; k++) {
-        if (/^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)0?$/.test(out[k])) {
-          out[k] = out[k].replace(/0?$/, '1');
-          break;
-        }
-      }
+    if (vowelIdxs.length === 0) return out;
+
+    for (let k = 0; k < vowelIdxs.length; k++) {
+      const idx = vowelIdxs[k];
+      out[idx] = out[idx] + (k === 0 ? '1' : '0');
     }
     return out;
   }
 
+  function consumeOneG2PUnit(w, i, out) {
+    const rest = w.slice(i);
+    for (const [re, phones, len] of G2P_RULES) {
+      if (re.test(rest)) {
+        out.push(...phones);
+        return i + len;
+      }
+    }
+    return i + 1;
+  }
+
+  function ruleBasedG2POneWord(word) {
+    const w = word.toLowerCase().replace(/[^a-z']/g, '');
+    if (!w) return [];
+
+    if (IRREGULAR_WORDS[w]) return IRREGULAR_WORDS[w].slice();
+
+    let i = 0;
+    const out = [];
+    let guard = 0;
+    while (i < w.length && guard < 64) {
+      guard++;
+      const remaining = w.slice(i);
+      const magic = findMagicE(remaining);
+      if (magic && i + magic.len === w.length) {
+        out.push(MAGIC_E_LONG_VOWEL[magic.vowel]);
+        out.push(...(CONSONANT_G2P[magic.consonantSeq] || []));
+        i += magic.len;
+        continue;
+      }
+      i = consumeOneG2PUnit(w, i, out);
+    }
+
+    return applyPrimaryStress(out);
+  }
+
+  function ruleBasedG2P(word) {
+
+    const subWords = word.trim().split(/\s+/).filter(Boolean);
+    if (subWords.length <= 1) return ruleBasedG2POneWord(word);
+    return subWords.flatMap((sw) => ruleBasedG2POneWord(sw));
+  }
+
   function wordToPhones(rawWord) {
-    const key = rawWord.toLowerCase();
+    const expansion = expandTextToken(rawWord);
+    if (expansion) {
+
+      const parts = expansion.map((sw) => wordToPhones(sw));
+      return {
+        phones: parts.flatMap((p) => p.phones),
+        oov: parts.some((p) => p.oov),
+      };
+    }
+
+    const cleanWord = rawWord.replace(/[.]+$/, '');
+    const key = cleanWord.toLowerCase();
     if (cmudict && Object.prototype.hasOwnProperty.call(cmudict, key)) {
       return { phones: cmudict[key], oov: false };
     }
@@ -639,13 +897,36 @@
 
   function tokenize(text) {
     const tokens = [];
-    const re = /[A-Za-z0-9'’]+|[.!?,;:]/g;
+    const re = /[A-Za-z0-9'’]+\.?|[.!?]+|[,;:]|[—–]|--+/g;
     let m;
     while ((m = re.exec(text)) !== null) {
       const raw = m[0];
-      tokens.push({ text: raw, start: m.index, end: m.index + raw.length });
+      const start = m.index;
+      const end = m.index + raw.length;
+
+      if (/[A-Za-z]\.$/.test(raw)) {
+        const withoutDot = raw.slice(0, -1);
+        const isKnownAbbrev = Object.prototype.hasOwnProperty.call(
+          ABBREVIATIONS, withoutDot.toLowerCase()
+        );
+        if (!isKnownAbbrev) {
+          tokens.push({ text: withoutDot, start, end: end - 1 });
+          tokens.push({ text: '.', start: end - 1, end });
+          continue;
+        }
+      }
+
+      tokens.push({ text: raw, start, end });
     }
     return tokens;
+  }
+
+  function classifyPauseToken(text) {
+    if (/^[—–]$|^--+$/.test(text)) return 'dash';
+    if (/^\.{2,}$/.test(text)) return 'ellipsis';
+    if (/^[?!]{2,}|^[?!][?!]+$/.test(text)) return text.includes('?') ? '?' : '!';
+    if (/^[.!?,;:]$/.test(text)) return text;
+    return null;
   }
 
   function buildCandidatePools() {
@@ -987,18 +1268,23 @@
     const plan = [];
     const wordMeta = [];
     let hadOov = false;
+    const oovWords = [];
     let anyResolved = false;
     let phonemePosition = 0;
 
     tokens.forEach((tok, ti) => {
-      if (/^[.!?,;:]$/.test(tok.text)) {
-        const pause = PAUSE_PUNCT[tok.text] || 0.15;
+      const pauseKind = classifyPauseToken(tok.text);
+      if (pauseKind) {
+        const pause = PAUSE_PUNCT[pauseKind] || 0.15;
         plan.push({ kind: 'silence', duration: pause });
         return;
       }
 
       const { phones, oov } = wordToPhones(tok.text);
-      if (oov) hadOov = true;
+      if (oov) {
+        hadOov = true;
+        if (oovWords.length < 6 && !oovWords.includes(tok.text)) oovWords.push(tok.text);
+      }
 
       const wordIndex = wordMeta.length;
       const resolvedPhones = [];
@@ -1060,12 +1346,15 @@
       }
 
       const next = tokens[ti + 1];
-      if (!next || !/^[.!?,;:]$/.test(next.text)) {
-        plan.push({ kind: 'silence', duration: WORD_GAP });
+      if (!next || !classifyPauseToken(next.text)) {
+        const gapDuration = next
+          ? computeWordGap(tok.text, next.text, `${text}::${ti}`)
+          : WORD_GAP;
+        plan.push({ kind: 'silence', duration: gapDuration });
       }
     });
 
-    return { plan, wordMeta, tokens, hadOov, anyResolved };
+    return { plan, wordMeta, tokens, hadOov, oovWords, anyResolved };
   }
 
   async function renderPlan(built) {
@@ -1106,99 +1395,36 @@
     if (totalDuration <= 0) totalDuration = 0.05;
 
     const sampleRate = actx.sampleRate;
-    const SAFETY_PAD_SECONDS = 0.15;
-    const totalFrames = Math.ceil((totalDuration + SAFETY_PAD_SECONDS) * sampleRate);
-    const offline = new OfflineAudioContext(1, totalFrames, sampleRate);
 
-    const highPass = offline.createBiquadFilter();
-    highPass.type = 'highpass';
-    highPass.frequency.value = 70;
+    const clipBuffers = {};
+    const clipIdCache = new Map();
 
-    const lowShelf = offline.createBiquadFilter();
-    lowShelf.type = 'lowshelf';
-    lowShelf.frequency.value = 180;
-    lowShelf.gain.value = 1.5;
+    const workerPlan = timedPlan.map((item) => {
+      if (item.kind !== 'clip') return item;
 
-    const presence = offline.createBiquadFilter();
-    presence.type = 'peaking';
-    presence.frequency.value = 1500;
-    presence.Q.value = 1.2;
-    presence.gain.value = 2.0;
-
-    const compressor = offline.createDynamicsCompressor();
-    compressor.threshold.value = -14;
-    compressor.knee.value = 10;
-    compressor.ratio.value = 3.5;
-    compressor.attack.value = 0.003;
-    compressor.release.value = 0.1;
-
-    highPass.connect(lowShelf);
-    lowShelf.connect(presence);
-    presence.connect(compressor);
-    compressor.connect(offline.destination);
-
-    timedPlan.forEach((item, idx) => {
-      if (item.kind !== 'clip') return;
-
-      const rawData = item.buffer.getChannelData(0);
-      const startFrame = item.trimStart;
-      const endFrame = item.trimEnd;
-
-      const sourceData = rawData;
-      const sourceOffset = startFrame;
-      const numFrames = Math.max(1, endFrame - startFrame);
-
-      const clipBuf = offline.createBuffer(1, numFrames, sampleRate);
-      const clipData = clipBuf.getChannelData(0);
-
-      const nextItem = timedPlan[idx + 1];
-      const hasNextOverlap = (nextItem && nextItem.kind === 'clip' && nextItem.wordIndex === item.wordIndex && nextItem.overlapPrev > 0);
-      const overlapNext = hasNextOverlap ? nextItem.overlapPrev : 0;
-
-      const fadeInSec = item.overlapPrev > 0 ? item.overlapPrev : 0.004;
-      const fadeOutSec = overlapNext > 0 ? overlapNext : 0.004;
-
-      const fadeInFrames = Math.min(Math.floor(numFrames / 2), Math.round(fadeInSec * sampleRate));
-      const fadeOutFrames = Math.min(Math.floor(numFrames / 2), Math.round(fadeOutSec * sampleRate));
-
-      for (let f = 0; f < numFrames; f++) {
-        let val = sourceData[sourceOffset + f] * item.gainScale;
-
-        if (f < fadeInFrames && fadeInFrames > 0) {
-          if (item.overlapPrev > 0) {
-            val *= Math.sin((Math.PI / 2) * (f / fadeInFrames));
-          } else {
-            val *= (f / fadeInFrames);
-          }
-        }
-
-        const framesFromEnd = numFrames - 1 - f;
-        if (framesFromEnd < fadeOutFrames && fadeOutFrames > 0) {
-          if (overlapNext > 0) {
-            val *= Math.cos((Math.PI / 2) * (1 - framesFromEnd / fadeOutFrames));
-          } else {
-            val *= (framesFromEnd / fadeOutFrames);
-          }
-        }
-
-        clipData[f] = val;
+      let clipId = clipIdCache.get(item.buffer);
+      if (clipId === undefined) {
+        clipId = `c${clipIdCache.size}`;
+        clipIdCache.set(item.buffer, clipId);
+        clipBuffers[clipId] = {
+          channelData: item.buffer.getChannelData(0).slice(),
+          sampleRate: item.buffer.sampleRate
+        };
       }
 
-      const src = offline.createBufferSource();
-      src.buffer = clipBuf;
-      src.connect(highPass);
-      src.start(item.start);
+      const { buffer, ...rest } = item;
+      return { ...rest, clipId };
     });
 
-    const padded = await offline.startRendering();
+    const workerResult = await renderInWorker({
+      sampleRate,
+      totalDuration,
+      timedPlan: workerPlan,
+      clipBuffers
+    });
 
-    const exactFrames = Math.min(Math.ceil(totalDuration * sampleRate), padded.length);
-    const rendered = actx.createBuffer(padded.numberOfChannels, Math.max(exactFrames, 1), sampleRate);
-    for (let ch = 0; ch < padded.numberOfChannels; ch++) {
-      const src = padded.getChannelData(ch);
-      const dst = rendered.getChannelData(ch);
-      dst.set(src.subarray(0, rendered.length));
-    }
+    const rendered = actx.createBuffer(1, Math.max(workerResult.length, 1), workerResult.sampleRate);
+    rendered.getChannelData(0).set(workerResult.channelData.subarray(0, rendered.length));
 
     const wordTimingList = wordMeta.map((w, wi) => {
       const clips = timedPlan.filter((it) => it.kind === 'clip' && it.wordIndex === wi);
@@ -1263,7 +1489,7 @@
 
     const wordTokenIdxs = [];
     tokens.forEach((tok, ti) => {
-      if (!/^[.!?,;:]$/.test(tok.text)) wordTokenIdxs.push(ti);
+      if (!classifyPauseToken(tok.text)) wordTokenIdxs.push(ti);
     });
 
     wordTokenIdxs.forEach((ti, wi) => {
@@ -1427,10 +1653,13 @@
     const src = actx.createBufferSource();
     src.buffer = rendered.buffer;
     src.connect(analyser);
+    const oovSuffix = built.hadOov
+      ? ` (guessed pronunciation for: ${built.oovWords.join(', ')}${built.oovWords.length >= 6 ? '…' : ''})`
+      : '';
     src.onended = () => {
       if (currentSource === src) {
         stopPlayback();
-        setStatus(built.hadOov ? 'done. (some words guessed because they were not in the dictionary)' : 'done.', 'ok');
+        setStatus(`done.${oovSuffix}`, 'ok');
       }
     };
 
@@ -1443,7 +1672,7 @@
     els.stopBtn.disabled = false;
     els.exportBtn.disabled = false;
     els.playBtn.disabled = false;
-    setStatus(built.hadOov ? 'playing... (some words guessed because they were not in the dictionary)' : 'playing...');
+    setStatus(`playing...${oovSuffix}`);
 
     rafHandle = requestAnimationFrame(tickHighlight);
   }
@@ -1555,10 +1784,6 @@
     if (currentSource) stopPlayback();
     currentRender = null;
     els.exportBtn.disabled = true;
-  });
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) stopPlayback();
   });
 
   (async function boot() {
